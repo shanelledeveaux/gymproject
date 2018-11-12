@@ -122,3 +122,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.App {
+  background-color: #edeced;
+  height: 100vh;
+}
