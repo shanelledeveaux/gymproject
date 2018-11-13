@@ -1,0 +1,13 @@
+@import "./variables";
+
+@mixin heading-font($size) {
+  font-family: "Roboto", Sans-Serif;
+  font-size: $size;
+  color: $offwhite;
+}
+
+@mixin body-font($size) {
+  font-family: "Droid Serif", Serif;
+  font-size: $size;
+  color: $offwhite;
+}
