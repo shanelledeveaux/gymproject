@@ -102,6 +102,7 @@ section {
 }
 body {
   line-height: 1;
+  background-color: #a0b996;
 }
 ol,
 ul {
@@ -123,7 +124,8 @@ table {
   border-spacing: 0;
 }
 
-.App {
-  background-color: #a0b996;
-  height: 100vh;
+.header {
+  position: fixed;
+  width: 100vw;
+  height: 6vh;
 }
