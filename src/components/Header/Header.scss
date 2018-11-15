@@ -1,0 +1,39 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.header_content {
+  @include heading-font(3vh);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 2vw;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  //   justify-items: center;
+}
+
+.nav_logo {
+  justify-content: center;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.nav_login {
+  justify-self: center;
+}
+
+a {
+  text-decoration: none;
+  color: $offwhite;
+  justify-self: center;
+}
+
+a:hover {
+  color: $grey;
+}

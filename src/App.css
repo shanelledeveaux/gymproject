@@ -102,7 +102,7 @@ section {
 }
 body {
   line-height: 1;
-  background-color: #a0b996;
+  background: linear-gradient(to right, #9db187, #a0b996);
 }
 ol,
 ul {

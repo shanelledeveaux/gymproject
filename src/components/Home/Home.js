@@ -1,17 +1,18 @@
 import React from "react";
 import "./Home.css";
-import gardenrunner from "./gardenrunner.png";
 
 const Home = () => {
   return (
     <div className="home">
-      <img src={gardenrunner} alt="" />
+      <div className="gardenrunner" />
       <div className="about_box">
-        <h1>Shanelle's Gym</h1>
-        <div>Strong is the new beautiful</div>
-        <div className="link">About</div>
-        <div className="link">About</div>
-        <div className="link">About</div>
+        <div>
+          <h1>Shanelle's Gym</h1>
+          <div>Strong is the new beautiful</div>
+        </div>
+        <div className="info1">some info</div>
+        <div className="picture1">a picture</div>
+        <div className="info2">some info</div>
       </div>
     </div>
   );
