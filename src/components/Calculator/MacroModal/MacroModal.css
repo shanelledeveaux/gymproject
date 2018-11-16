@@ -9,7 +9,7 @@
 
 .modal {
   font-family: "Open Sans", Sans-Serif;
-  font-size: 3vh;
+  font-size: 2.5vh;
   color: #edeced;
   position: fixed;
   top: 10vh;
@@ -20,6 +20,88 @@
   background-color: #273319;
   filter: drop-shadow(0 0 0.75rem #333333);
   padding: 2vw;
+}
+
+.macro_calc_form {
+  display: grid;
+  height: 70vh;
+  align-items: center;
+}
+
+.calc_section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.calc_choice {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.field_input {
+  background: none;
+  color: #edeced;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.164);
+  border-bottom: solid #a0b996 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: 0;
+  width: 90%;
+}
+.field_input:focus {
+  border-bottom: solid #376205 1px;
+}
+
+input[type=radio]:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  left: -1px;
+  position: relative;
+  background-color: #edeced;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid white;
+}
+
+input[type=radio]:checked:after {
+  background-color: #376205;
+  border: 1px solid white;
+}
+
+.selectbox {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #a0b996;
+  font-family: "Open Sans", Sans-Serif;
+  font-size: 2.5vh;
+  color: #edeced;
+}
+
+.selectbox select {
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  font-family: "Open Sans", Sans-Serif;
+  font-size: 2vh;
+  color: #edeced;
+}
+
+.selectbox select:focus {
+  outline: none;
+}
+
+label {
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=MacroModal.css.map */

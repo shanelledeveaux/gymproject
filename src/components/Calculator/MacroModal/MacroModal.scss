@@ -11,7 +11,7 @@
 }
 
 .modal {
-  @include body-font(3vh);
+  @include body-font(2.5vh);
   position: fixed;
   top: 10vh;
   bottom: 10vh;
@@ -21,4 +21,84 @@
   background-color: $forestgreen;
   filter: drop-shadow(0 0 0.75rem rgb(51, 51, 51));
   padding: 2vw;
+}
+
+.macro_calc_form {
+  display: grid;
+  height: 70vh;
+  align-items: center;
+}
+
+.calc_section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.calc_choice {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.field_input {
+  background: none;
+  color: $offwhite;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.164);
+  border-bottom: solid $lightgreen 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: 0;
+  width: 90%;
+  &:focus {
+    border-bottom: solid $mediumgreen 1px;
+  }
+}
+
+input[type="radio"]:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  //   top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: $offwhite;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid white;
+}
+
+input[type="radio"]:checked:after {
+  background-color: $mediumgreen;
+  border: 1px solid white;
+}
+
+.selectbox {
+  border: 1px solid #ccc;
+  //   width: 120px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: $lightgreen;
+  @include body-font(2.5vh);
+}
+
+.selectbox select {
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  @include body-font(2vh);
+}
+
+.selectbox select:focus {
+  outline: none;
+}
+
+label {
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
