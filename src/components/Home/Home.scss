@@ -36,3 +36,7 @@
 h1 {
   @include heading-font(10vh);
 }
+
+h2 {
+  @include heading-font(4vh);
+}
